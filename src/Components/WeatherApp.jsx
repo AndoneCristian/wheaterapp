@@ -29,16 +29,19 @@ const WeatherApp = () => {
   };
 
   return (
-    <div className="box-border p-4 w-3/4 md:w-2/6 h-4/6  bg-gradient-to-br from-[#9064FD] to-[#643cc8] rounded-3xl flex flex-col items-center shadow-2xl">
-      <form onSubmit={submitHandler} className="flex items-center gap-22">
+    <div className="box-border p-4 w-3/4 md:w-2/6 h-4/6 overflow-hidden bg-gradient-to-br from-[#9064FD] to-[#643cc8] rounded-3xl flex flex-col items-center shadow-2xl">
+      <form onSubmit={submitHandler} className="flex">
         <input
-          className="px-6 ml-4 py-4 bg-white/80 rounded-full outline-none text-center"
+          className="px-6  py-4 bg-white/80 rounded-full outline-none text-center hover:bg-white"
           type="text"
           value={input}
           placeholder="Type any city / country"
           onChange={(e) => setInput(e.target.value)}
         />
-        <button type="submit" className="bg-white/80 p-3 rounded-full">
+        <button
+          type="submit"
+          className="bg-white/80 hover:bg-white p-3 rounded-full"
+        >
           <AiOutlineSearch size={30} />
         </button>
         {console.log(info)}

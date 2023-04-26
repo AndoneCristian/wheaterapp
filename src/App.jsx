@@ -5,7 +5,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <div className="w-full h-screen  flex justify-center items-center bg-[#333]">
+      <div className="w-full h-[100svh]  flex justify-center items-center bg-[#333]">
         <WeatherApp />
       </div>
     </>
