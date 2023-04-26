@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { WeatherKey } from "./WeatherKey";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -22,10 +22,6 @@ const WeatherApp = () => {
         }
       });
   };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   const submitHandler = (e) => {
     e.preventDefault();
